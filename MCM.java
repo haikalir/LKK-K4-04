@@ -85,6 +85,6 @@ public class MCM {
 		for (int i = 0; i < n; i++) {
 			arr[i] = sc.nextInt();
 		}
-			matrixChainOrder(arr);
+		matrixChainOrder(arr);
 	}
 }
