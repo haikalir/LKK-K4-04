@@ -113,9 +113,28 @@ class Table{
                            
     void printResult(){
         
+        System.out.print("LCS\t= ");
+        printResult(b, arrX, arrX.length, arrY.length);
     }
     
     void printResult(String[][] b, String[] arrX, int i, int j){
+        
+        if(i == 0 || j == 0){
 
+            return;
+        }
+        else if(b[i][j].equals("\\")){
+
+            printResult(b, arrX, i - 1, j - 1);
+            System.out.print(arrX[i - 1] + " ");
+        }
+        else if(b[i][j].equals("|")){
+
+            printResult(b, arrX, i - 1, j); 
+        }
+        else{
+
+            printResult(b, arrX, i, j - 1);
+        }
     }
 }
