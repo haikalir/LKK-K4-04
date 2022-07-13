@@ -90,8 +90,27 @@ class Table{
  
     void printTable(){
         
+        System.out.println("\nTabel C (Angka)");
+        for (int i = 0; i < c.length; i++) {
+            
+            for (int j = 0; j < c[i].length; j++) {
+                
+                System.out.print(c[i][j] + "\t");
+            }
+            System.out.println("");
+        }
+        System.out.println("\nTabel B (Arah));
+        for (int i = 0; i < b.length; i++) {
+            
+            for (int j = 0; j < b[i].length; j++) {
+                
+                System.out.print(b[i][j] + "\t");
+            }
+            System.out.println("");
+        }
+        System.out.println("");
     }
- 
+                           
     void printResult(){
         
     }
