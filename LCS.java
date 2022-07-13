@@ -33,3 +33,28 @@ public class LCS{
         input.close();
     }
 }
+
+class Table{
+  
+    String[] arrX;
+    String[] arrY;
+
+    String[][] b;
+    int[][] c;
+ 
+    Table(String[] arrX, String[] arrY){
+
+    }
+ 
+    void printTable(){
+        
+    }
+ 
+    void printResult(){
+        
+    }
+    
+    void printResult(String[][] b, String[] arrX, int i, int j){
+
+    }
+}
