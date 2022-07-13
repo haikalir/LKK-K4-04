@@ -1,14 +1,14 @@
 /*
-   Haikal Irfano 215150207111043
-   Raditya Atmaja Satria Permadhi 215150207111042
-   Yehezkiel Stephanus Austin 215150207111053
+    Haikal Irfano 215150207111043
+    Raditya Atmaja Satria Permadhi 215150207111042
+    Yehezkiel Stephanus Austin 215150207111053
 */
 
 import java.util.Scanner;
 
 public class LCS{
- 
-  public static void main(String[] args) {
+
+    public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
         
@@ -35,13 +35,13 @@ public class LCS{
 }
 
 class Table{
-  
+
     String[] arrX;
     String[] arrY;
 
     String[][] b;
     int[][] c;
- 
+
     Table(String[] arrX, String[] arrY){
 
         this.arrX = arrX;
@@ -87,7 +87,7 @@ class Table{
             }
         }
     }
- 
+
     void printTable(){
         
         System.out.println("\nTabel C (Angka)");
@@ -99,7 +99,7 @@ class Table{
             }
             System.out.println("");
         }
-        System.out.println("\nTabel B (Arah));
+        System.out.println("\nTabel B (Arah)");
         for (int i = 0; i < b.length; i++) {
             
             for (int j = 0; j < b[i].length; j++) {
@@ -110,7 +110,7 @@ class Table{
         }
         System.out.println("");
     }
-                           
+	
     void printResult(){
         
         System.out.print("LCS\t= ");
@@ -130,7 +130,7 @@ class Table{
         }
         else if(b[i][j].equals("|")){
 
-            printResult(b, arrX, i - 1, j); 
+            printResult(b, arrX, i - 1, j);
         }
         else{
 

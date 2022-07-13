@@ -1,3 +1,11 @@
+/*
+	Haikal Irfano 215150207111043
+	Raditya Atmaja Satria Permadhi 215150207111042
+	Yehezkiel Stephanus Austin 215150207111053
+*/
+
+import java.util.Scanner;
+
 public class MCM {
 	
 	static char matrix;
@@ -58,8 +66,8 @@ public class MCM {
 	static void printParenthesis(int i, int j, int n, int[][] arr) {
 		
 		if (i == j) {
-		    System.out.print(matrix++);
-		    return;
+			System.out.print(matrix++);
+			return;
 		}
 		System.out.print("(");
 		printParenthesis(i, arr[i][j], n, arr);
@@ -75,8 +83,8 @@ public class MCM {
 		int[] arr = new int[n];
 		System.out.println("Masukkan P");
 		for (int i = 0; i < n; i++) {
-		    arr[i] = sc.nextInt();
+			arr[i] = sc.nextInt();
 		}
-        	matrixChainOrder(arr);
-    	}
+			matrixChainOrder(arr);
+	}
 }
